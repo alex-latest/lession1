@@ -1,0 +1,6 @@
+meteor create epoll
+
+pushd ./epoll
+meteor add bootstrap
+meteor add accounts-twitter
+popd

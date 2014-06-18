@@ -1,0 +1,2 @@
+npm install -g geddy
+geddy gen app to_do
