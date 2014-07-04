@@ -1,0 +1,82 @@
+// General styles, e. g. for the body tag
+@import 'variables';
+
+font-face {
+    font-family: Icons;
+    src: url('/fonts/icons.woff');
+}
+
+/* -------------------
+    Helper classes
+   ------------------- */
+
+.centralize {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.unstyled.link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.floated {
+    &.right {
+        float: right;
+    }
+
+    &.left {
+        float: left;
+    }
+}
+
+/* -------------------
+    Main styles
+   ------------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(23, 255, 145, 0.01);
+    margin-bottom: 60px; // footer size
+}
+
+h1 {
+    font-family: 'Miniver', cursive;
+}
+
+a {
+    color: inherit;
+}
+
+/* -------------------
+    Footer
+   ------------------- */
+#main, footer {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: @greenColor;
+    color: white;
+    width: 100%;
+}
+
+/* -------------------
+    Progress bar
+   ------------------- */
+
+#iron-router-progress {
+    background-color : @greenColor;
+    box-shadow       : 0 0 5px #a7c4b9;
+}
+
+#iron-router-progress.spinner:before {
+    border-color : #000000;
+}
